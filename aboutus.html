@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Sensy Lanka Pvt Ltd</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9fdfb; /* Light background */
+            color: #333;
+        }
+
+        header {
+            background-color: #a8e6cf; /* Light green */
+            color: #2d6a4f; /* Dark green */
+            text-align: center;
+            padding: 50px 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 3.5em;
+            margin: 0;
+            animation: fadeIn 1s ease;
+        }
+
+        header h2 {
+            font-size: 2em;
+            margin: 10px 0;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #2d6a4f; /* Dark green */
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: #a8e6cf; /* Light green on hover */
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .card {
+            background: #ffffff; /* White background for cards */
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            color: #2d6a4f; /* Dark green */
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        p {
+            line-height: 1.6;
+            text-align: justify;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            list-style: none; /* Custom bullet style */
+            padding-left: 0;
+            margin: 10px 0;
+        }
+
+        li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 10px;
+            transition: color 0.3s;
+        }
+
+        li::before {
+            content: '✓'; /* Custom bullet */
+            position: absolute;
+            left: 0;
+            color: #2d6a4f; /* Dark green for bullet */
+            font-weight: bold;
+        }
+
+        li:hover {
+            color: #a8e6cf; /* Light green on hover */
+        }
+
+        footer {
+            background-color: #2d6a4f; /* Dark green */
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>About Us</h1>
+        <h2>Sensy Lanka Pvt Ltd</h2>
+        <a href="index.html" class="back-button">Back to Home</a> <!-- Link to your home page -->
+    </header>
+    
+    <div class="container">
+        <div class="card">
+            <h2>Who We Are</h2>
+            <p>At Sensy Lanka Pvt Ltd, we are dedicated to providing the highest quality products and an exceptional shopping experience. Our supermarket serves as a reliable partner for all your grocery needs.</p>
+        </div>
+
+        <div class="card">
+            <h2>Our Mission</h2>
+            <p>Our mission is to deliver:</p>
+            <ul>
+                <li>Exceptional quality products</li>
+                <li>Affordable pricing</li>
+                <li>Outstanding customer service</li>
+                <li>Innovative shopping solutions</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Why Choose Us?</h2>
+            <p>We excel in the supermarket industry because:</p>
+            <ul>
+                <li>A diverse range of products</li>
+                <li>Regular promotions and discounts</li>
+                <li>Commitment to sustainability</li>
+                <li>Accessible locations and online shopping</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Contact Us</h2>
+            <p>For any inquiries, feel free to reach out:</p>
+            <ul>
+                <li>Email: <a href="mailto:infosensylanka@sensylanka.com" style="color: #2d6a4f;">info@sensylanka.com</a></li>
+                <li>Phone: +94 724240616</li>
+                <li>Address: 123 Main Street, Colombo, Sri Lanka</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Sensy Lanka Pvt Ltd. All rights reserved.</p>
+    </footer>
+</body>
+</html>
